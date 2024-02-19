@@ -7,7 +7,7 @@ import math
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 # Model checkpoints
-srresnet_checkpoint = "./resnet/checkpoint_srresnet2x_900.pth.tar"
+srresnet_checkpoint = "./resnet/checkpoint_srresnet2x_1050.pth.tar"
 
 # Load models
 srresnet = torch.load(srresnet_checkpoint)['model'].to(device)
